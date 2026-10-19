@@ -1,0 +1,18 @@
+# PyTorch with CUDA 12.8 (needed for the RTX 50-series / sm_120 GPU).
+# The default PyPI torch on Windows is CPU-only, so the PyTorch index is added here.
+# Equivalent manual install:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch==2.11.0+cu128
+torchvision==0.26.0+cu128
+
+numpy==2.4.6
+pandas==3.0.6
+pillow==12.3.0
+matplotlib==3.11.2
+scikit-learn==1.9.1
+grad-cam==1.5.7
+
+# For running the notebook
+jupyter==1.1.1
+ipykernel==7.4.0
